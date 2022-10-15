@@ -28,6 +28,8 @@ procedure.  But if you are feeling adventurous:
 $username = "email@domain"
 
 # step 2: install the exchange online powershell module
+# You may (will?) get a warning about installing modules from
+# PSGallery.  Type Y at the prompt.
 Install-Module ExchangeOnlineManagement -MinimumVersion 3.0.0
 
 # step 3: do the login dance, including any 2-factor auth.  You will
