@@ -51,7 +51,7 @@ Set-Mailbox $username -ForwardingSmtpAddress $Null
 # step 6b: or instead: turn forwarding on, while leaving a copy of the message
 # in your mailbox (the safest option).  If you set to $False instead
 # the message will be forwarded, but not sent to your local mailbox
-set-mailbox $username -DeliverToMailboxAndForward $True
+Set-Mailbox $username -DeliverToMailboxAndForward $True
 Set-Mailbox $username -ForwardingSmtpAddress PUT-YOUR-EXTERNAL-EMAIL-ADDRESS-HERE
 
 # step 7: optional, but show final forwarding settings (same cammand as step 5)
