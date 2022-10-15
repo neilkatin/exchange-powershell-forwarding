@@ -10,6 +10,19 @@ account).
 This document describes how to control mail forwarding via powershell as an
 alternate way to control your forwarding settings.
 
+The below commands need to be run in windows powershell.  This is pre-installed
+on windows 10 and beyond.  To open a powershell window:
+
+* run it directly: hold "windows" key and press R, type "powershell" in the text field, and hit enter.
+  You should have a new powershell window open
+* or: open the start menu, type "powershell" (without the quotes), and click on "Windows Powershell"
+
+If you are on a mac: you can install powershell via `brew install --cask powershell`.
+Then run powershell by running `pwsh` in a terminal window.
+If that is meaningless gibberish to you: you might not be a good candidate for this
+procedure.  But if you are feeling adventurous:
+[here is a more detailed set of powershell installation instructions](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.2)
+
 ``` powershell
 # step 1: set your email address on this line
 $username = "email@domain"
